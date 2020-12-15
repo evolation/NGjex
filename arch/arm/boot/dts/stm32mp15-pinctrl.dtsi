@@ -1701,9 +1701,9 @@
 	};
 
 	spi4_pins_a: spi4-0 {
-		pins {
+		pins1 {
 			pinmux = <STM32_PINMUX('E', 12, AF5)>, /* SPI4_SCK */
-				 <STM32_PINMUX('E', 6, AF5)>;  /* SPI4_MOSI */
+				 <STM32_PINMUX('E', 14, AF5)>;  /* SPI4_MOSI */
 			bias-disable;
 			drive-push-pull;
 			slew-rate = <1>;
@@ -1938,7 +1938,6 @@
 			drive-push-pull;
 			slew-rate = <1>;
 		};
-
 		pins2 {
 			pinmux = <STM32_PINMUX('Z', 1, AF5)>; /* SPI1_MISO */
 			bias-disable;
