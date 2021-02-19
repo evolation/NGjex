@@ -177,6 +177,11 @@
 		compatible = "bosch,bme280";
 		reg = <0x76>;
 	};
+
+	light-sensor@10 {
+                compatible = "vishay,veml6030";
+                reg = <0x10>;
+    };
 };
 
 
